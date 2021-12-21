@@ -9,7 +9,6 @@ input.addEventListener('keyup', (e)=>{
 function addList(e){
     const notCompleted = document.querySelector('.notCompleted');
     const Completed = document.querySelector('.Completed');
-
     const newLi = document.createElement('li');
     const checkBtn = document.createElement('button');
     const delBtn = document.createElement('button');
@@ -22,7 +21,7 @@ function addList(e){
         input.value = '';
         notCompleted.appendChild(newLi);
         newLi.appendChild(checkBtn);
-        newLi.appendChild(delBtn);
+        newLi.appendChild(delBtn);  1           
     }
 
     checkBtn.addEventListener('click', function(){
